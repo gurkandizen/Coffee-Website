@@ -40,6 +40,10 @@
     --site-max-width: 1300px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Tüm Sire İçin Stiller */
 ul {
     list-style: none;
@@ -116,9 +120,29 @@ header .navbar {
     transition: 0.3s ease;
 }
 
-.navbar .nav-menu .nav-link:hover {
+/* .navbar .nav-menu .nav-link:hover {
     color: var(--white-color);
     background: var(--secondary-color);
+} */
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+    position: relative;
+    border-bottom: 3px solid transparent; /* BAŞLANGIÇTA GÖRÜNMEYEN ÇİZGİ */
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+.navbar .nav-menu .nav-link.active {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
 }
 
 .navbar :where(#menu-close-btn, #menu-open-btn) {
@@ -296,6 +320,7 @@ header .navbar {
 }
 
 .testimonials-section .testimonial {
+    user-select: none;
     display: flex;
     padding: 35px;
     text-align: center;
@@ -564,7 +589,7 @@ header .navbar {
     /* About Section Responsive */
     .about-section .section-content {
         gap: 70px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .about-section .about-img-wrapper .about-img {
