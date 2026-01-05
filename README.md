@@ -11,7 +11,7 @@ Projenin temel amacı, **HTML, CSS ve JavaScript bilgilerini pekiştirmek** ve g
 
 Projenin canlı halini aşağıdaki bağlantıdan inceleyebilirsiniz:
 
-🔗 **Live Demo:** (coffee-shoping-website.netlify.app/)
+🔗 **Live Demo:** (https://coffee-shoping-website.netlify.app/)
 
 ---
 
