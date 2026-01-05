@@ -40,3 +40,5 @@ const swiper = new Swiper('.slide-wrapper', {
     }
   }
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
